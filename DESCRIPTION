@@ -2,6 +2,21 @@ Package: reasyeda
 Title: Make Exploratory Data Analysis Easier
 Version: 0.0.0.9000
 Authors@R: 
+    person(given = "James",
+           family = "Kim",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Kristin",
+           family = "Bunyan",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(given = "Sukhleen",
+           family = "Kaur",
+           role = c("aut", "cre"),
+           email = "first.last@example.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
     person(given = "Luming",
            family = "Yang",
            role = c("aut", "cre"),
