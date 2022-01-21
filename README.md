@@ -18,6 +18,10 @@ Since exploratory data analysis is an imperative part of every analysis, the goa
 
 Other packages that offer similar functionality are:
 
+-   [edar](https://github.com/UBC-MDS/edar)
+-   [DataExplorer](https://www.rdocumentation.org/packages/DataExplorer/versions/0.8.1)
+-   [eaziReda](https://github.com/UBC-MDS/eaziReda)
+
 ## Installation
 
 You can install the development version of reasyeda from [GitHub](https://github.com/) with:
