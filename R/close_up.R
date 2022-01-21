@@ -1,7 +1,7 @@
-#'Takes in a dataframe object and displays a scatterplot with a correlation trend line visualization of the variable(s) most strongly correlated with the dependent variable.
+#' Accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.
 #'
 #' @param df The dataframe on which the function will operate
-#' @param N : number of visualizations of the variable(s) with the strongest correlation to the dependent variable to be displayed, defaults to 1
+#' @param N : The number of pairs of variables with strongest correlations to be displayed, defaults to 1
 #'
 #' @return
 #' @export
