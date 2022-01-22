@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -66,7 +60,7 @@ or acting as an appointed representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may
-be reported to the course instructors or TAs for enforcement. All
+be reported to the course instructors or TAs at tiffany.timbers@stat.ubc.ca for enforcement. All
 complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security
