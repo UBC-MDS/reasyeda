@@ -4,7 +4,7 @@
 #' @param var_list A vector. If passed, it will limit visualizations to a subset of variables
 #' @param n An integer. If passed, it will specify the number of bins for the histograms, defaults to 20
 #'
-#' @return a dictionary of the visualization objects generated created by the function
+#' @return a list of the visualization objects generated created by the function
 #' @export
 #'
 #' @examples
