@@ -9,7 +9,7 @@ the proportion of unique values for categorical variables. The
 nested list is of the categorical variables that exceed the threshold
 for considering dropping variables with high unique values.}
 \usage{
-summary_suggestions(df)
+summary_suggestions(df, threshold)
 }
 \arguments{
 \item{df}{The dataframe on which the function will operate}
@@ -30,10 +30,4 @@ for considering dropping variables with high unique values.
 \examples{
 library(palmerpenguins)
 summary_suggestions(penguins)
-[
-(summary statistics for numeric variables),
-(summary statistics for categorical variables),
-(percentage of unique values for categorical variables),
-[list of variables with percentage of unique values higher than the threshold]
-]
 }
