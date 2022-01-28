@@ -38,6 +38,10 @@ Imports:
     tidyr,
     palmerpenguins,
     purrr,
-    forcats
+    forcats,
     cowplot,
-    stats
+    stats,
+    pastecs,
+    readr,
+    tibble,
+    Hmisc

@@ -2,32 +2,44 @@
 % Please edit documentation in R/summary_suggestions.R
 \name{summary_suggestions}
 \alias{summary_suggestions}
-\title{Takes a dataframe object and returns a list object comprising
-of 3 dataframes and a list. The dataframes correspond to the
-summary statistics of numeric and categorical variables each and
-the proportion of unique values for categorical variables. The
-nested list is of the categorical variables that exceed the threshold
-for considering dropping variables with high unique values.}
+\title{Takes a dataframe object and returns a nested list object comprising
+of three lists. The first element of the output list corresponds
+to the descriptive statistics of numeric variables,
+the second element displays a list of summary data for the
+categorical variables and the final element calculates the count
+and proportion of distinct values in each categorical column.
+The last object of the output list can be used to determine
+which categorical variables to drop due to high proportion of
+unique values based on an input threshold value.}
 \usage{
-summary_suggestions(df, threshold)
+summary_suggestions(df, threshold = 0.8)
 }
 \arguments{
 \item{df}{The dataframe on which the function will operate}
 
-\item{threshold}{A float. If passed, it will define the threshold for identifying the variables with high unique values, defaults to 0.8}
+\item{threshold}{A float value that sets the threshold for the proportion of unique values}
 }
 \value{
-
+list
 }
 \description{
-Takes a dataframe object and returns a list object comprising
-of 3 dataframes and a list. The dataframes correspond to the
-summary statistics of numeric and categorical variables each and
-the proportion of unique values for categorical variables. The
-nested list is of the categorical variables that exceed the threshold
-for considering dropping variables with high unique values.
+Takes a dataframe object and returns a nested list object comprising
+of three lists. The first element of the output list corresponds
+to the descriptive statistics of numeric variables,
+the second element displays a list of summary data for the
+categorical variables and the final element calculates the count
+and proportion of distinct values in each categorical column.
+The last object of the output list can be used to determine
+which categorical variables to drop due to high proportion of
+unique values based on an input threshold value.
 }
 \examples{
 library(palmerpenguins)
 summary_suggestions(penguins)
+
+"summary statistics for numeric variables,
+summary statistics for categorical variables,
+percentage of unique values for categorical variables,
+list of variables with percentage of unique values higher than the threshold"
+
 }
