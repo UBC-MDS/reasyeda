@@ -17,7 +17,7 @@ This package is developed by James Kim, Kristin Bunyan, Sukhleen Kaur, and Lumin
 
 -   `close_up` - This function accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.
 
--   `summary_suggestions` - This function takes in a dataframe object and outputs a table of summary statistics for numeric and categorical variables and a table for percentage of unique values in the categorical variables.
+-   `summary_suggestions` - This function takes in a dataframe object and outputs a list of summary statistics for numeric and categorical variables. In addition, it also returns a list for the count and percentage of unique values in the categorical variables.
 
 Other packages that offer similar functionality are:
 
