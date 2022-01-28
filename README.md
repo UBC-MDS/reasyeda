@@ -41,4 +41,16 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(reasyeda)
 ## basic example code
+toy_data <- data.frame(
+    income = c(5, 8, 10, 12, 17, 19),
+    house_size = c(700, 600, 900, 1000, 1200, 1500),
+    views = c("mountain", "river", "sea", "mountain", "urban", "forest"),
+    price = c(65, 50, 80, 98.5, 112, 133),
+    doctor_visits = c(6, 8, 4, 5, 3, 2)
+  )
+ clean_up(toy_data)
+ birds_eye_view(toy_data)
+ close_up(toy_data)
+ summary_suggestions(toy_data)
+ 
 ```
