@@ -39,3 +39,5 @@ Imports:
     palmerpenguins,
     purrr,
     forcats
+    cowplot,
+    stats

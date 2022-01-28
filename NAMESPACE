@@ -2,4 +2,5 @@
 
 export(birds_eye_view)
 export(clean_up)
+export(close_up)
 export(summary_suggestions)

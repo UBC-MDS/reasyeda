@@ -7,6 +7,8 @@
 
 Since exploratory data analysis is an imperative part of every analysis, the goal of the `reasyeda` package is to provide efficient data scrubbing and visualization tools to perform preliminary EDA on raw data. The package can be leveraged to clean the dataset and visualize relationships between features to generate insightful trends.
 
+This package is developed by James Kim, Kristin Bunyan, Sukhleen Kaur, and Luming Yang.
+
 ## **Functions**
 
 -   `clean_up` - This function takes in a dataframe object and performs initial steps of EDA on unstructured data. It returns a clean dataset by removing null values and identifying potential outliers in numeric variables based on a defined threshold.
