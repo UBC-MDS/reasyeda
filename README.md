@@ -3,6 +3,7 @@
 <!-- badges: start -->
 
 [![Codecov test coverage](https://codecov.io/gh/UBC-MDS/reasyeda/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/reasyeda?branch=master)
+[![R-CMD-check](https://github.com/UBC-MDS/reasyeda/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/reasyeda/actions)
 <!-- badges: end -->
 
 Since exploratory data analysis is an imperative part of every analysis, the goal of the `reasyeda` package is to provide efficient data scrubbing and visualization tools to perform preliminary EDA on raw data. The package can be leveraged to clean the dataset and visualize relationships between features to generate insightful trends.
