@@ -79,7 +79,125 @@
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">reasyeda</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">reasyeda</span><span class="op">)</span>
+
+<span class="co">## basic example code</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://allisonhorst.github.io/palmerpenguins/" class="external-link">palmerpenguins</a></span><span class="op">)</span> <span class="co"># load the dataset</span>
+
+<span class="fu"><a href="../reference/clean_up.html">clean_up</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="co">#&gt; [1] "**The following potenital outliers are detected:**"</span>
+<span class="co">#&gt; $bill_length_mm</span>
+<span class="co">#&gt; numeric(0)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $bill_depth_mm</span>
+<span class="co">#&gt; numeric(0)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $flipper_length_mm</span>
+<span class="co">#&gt; integer(0)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $body_mass_g</span>
+<span class="co">#&gt; integer(0)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $year</span>
+<span class="co">#&gt; integer(0)</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 333 × 8</span></span>
+<span class="co">#&gt;    species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g</span>
+<span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> Adelie  Torgersen           39.1          18.7               181        <span style="text-decoration: underline;">3</span>750</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> Adelie  Torgersen           39.5          17.4               186        <span style="text-decoration: underline;">3</span>800</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> Adelie  Torgersen           40.3          18                 195        <span style="text-decoration: underline;">3</span>250</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> Adelie  Torgersen           36.7          19.3               193        <span style="text-decoration: underline;">3</span>450</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> Adelie  Torgersen           39.3          20.6               190        <span style="text-decoration: underline;">3</span>650</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> Adelie  Torgersen           38.9          17.8               181        <span style="text-decoration: underline;">3</span>625</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> Adelie  Torgersen           39.2          19.6               195        <span style="text-decoration: underline;">4</span>675</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> Adelie  Torgersen           41.1          17.6               182        <span style="text-decoration: underline;">3</span>200</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> Adelie  Torgersen           38.6          21.2               191        <span style="text-decoration: underline;">3</span>800</span>
+<span class="co">#&gt; <span style="color: #BCBCBC;">10</span> Adelie  Torgersen           34.6          21.1               198        <span style="text-decoration: underline;">4</span>400</span>
+<span class="co">#&gt; <span style="color: #949494;"># … with 323 more rows, and 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</span></span>
+<span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/birds_eye_view.html">birds_eye_view</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="co">#&gt; Warning: Removed 2 rows containing non-finite values (stat_bin).</span></code></pre></div>
+<p><img src="pyeasyeda-vignette_files/figure-html/setup-1.png" width="700"></p>
+<pre><code><span class="co">#&gt; Warning: Removed 2 rows containing non-finite values (stat_bin).</span></code></pre>
+<p><img src="pyeasyeda-vignette_files/figure-html/setup-2.png" width="700"></p>
+<pre><code><span class="co">#&gt; Warning: Removed 2 rows containing non-finite values (stat_bin).</span></code></pre>
+<p><img src="pyeasyeda-vignette_files/figure-html/setup-3.png" width="700"></p>
+<pre><code><span class="co">#&gt; Warning: Removed 2 rows containing non-finite values (stat_bin).</span></code></pre>
+<p><img src="pyeasyeda-vignette_files/figure-html/setup-4.png" width="700"><img src="pyeasyeda-vignette_files/figure-html/setup-5.png" width="700"><img src="pyeasyeda-vignette_files/figure-html/setup-6.png" width="700"><img src="pyeasyeda-vignette_files/figure-html/setup-7.png" width="700"></p>
+<pre><code><span class="co">#&gt; Registered S3 method overwritten by 'GGally':</span>
+<span class="co">#&gt;   method from   </span>
+<span class="co">#&gt;   +.gg   ggplot2</span></code></pre>
+<p><img src="pyeasyeda-vignette_files/figure-html/setup-8.png" width="700"><img src="pyeasyeda-vignette_files/figure-html/setup-9.png" width="700"></p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/close_up.html">close_up</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="co">#&gt; Warning: Removed 2 rows containing non-finite values (stat_smooth).</span>
+<span class="co">#&gt; Warning: Removed 2 rows containing missing values (geom_point).</span></code></pre></div>
+<p><img src="pyeasyeda-vignette_files/figure-html/setup-10.png" width="700"></p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/summary_suggestions.html">summary_suggestions</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="co">#&gt; [[1]]</span>
+<span class="co">#&gt;              bill_length_mm bill_depth_mm flipper_length_mm  body_mass_g</span>
+<span class="co">#&gt; nbr.val        3.420000e+02   342.0000000      3.420000e+02 3.420000e+02</span>
+<span class="co">#&gt; nbr.null       0.000000e+00     0.0000000      0.000000e+00 0.000000e+00</span>
+<span class="co">#&gt; nbr.na         2.000000e+00     2.0000000      2.000000e+00 2.000000e+00</span>
+<span class="co">#&gt; min            3.210000e+01    13.1000000      1.720000e+02 2.700000e+03</span>
+<span class="co">#&gt; max            5.960000e+01    21.5000000      2.310000e+02 6.300000e+03</span>
+<span class="co">#&gt; range          2.750000e+01     8.4000000      5.900000e+01 3.600000e+03</span>
+<span class="co">#&gt; sum            1.502130e+04  5865.7000000      6.871300e+04 1.437000e+06</span>
+<span class="co">#&gt; median         4.445000e+01    17.3000000      1.970000e+02 4.050000e+03</span>
+<span class="co">#&gt; mean           4.392193e+01    17.1511696      2.009152e+02 4.201754e+03</span>
+<span class="co">#&gt; SE.mean        2.952205e-01     0.1067846      7.603704e-01 4.336473e+01</span>
+<span class="co">#&gt; CI.mean.0.95   5.806825e-01     0.2100394      1.495607e+00 8.529605e+01</span>
+<span class="co">#&gt; var            2.980705e+01     3.8998080      1.977318e+02 6.431311e+05</span>
+<span class="co">#&gt; std.dev        5.459584e+00     1.9747932      1.406171e+01 8.019545e+02</span>
+<span class="co">#&gt; coef.var       1.243020e-01     0.1151404      6.998830e-02 1.908618e-01</span>
+<span class="co">#&gt;                      year</span>
+<span class="co">#&gt; nbr.val      3.440000e+02</span>
+<span class="co">#&gt; nbr.null     0.000000e+00</span>
+<span class="co">#&gt; nbr.na       0.000000e+00</span>
+<span class="co">#&gt; min          2.007000e+03</span>
+<span class="co">#&gt; max          2.009000e+03</span>
+<span class="co">#&gt; range        2.000000e+00</span>
+<span class="co">#&gt; sum          6.907620e+05</span>
+<span class="co">#&gt; median       2.008000e+03</span>
+<span class="co">#&gt; mean         2.008029e+03</span>
+<span class="co">#&gt; SE.mean      4.412279e-02</span>
+<span class="co">#&gt; CI.mean.0.95 8.678531e-02</span>
+<span class="co">#&gt; var          6.697064e-01</span>
+<span class="co">#&gt; std.dev      8.183559e-01</span>
+<span class="co">#&gt; coef.var     4.075419e-04</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[2]]</span>
+<span class="co">#&gt; dplyr::select_if(df, function(col) is.character(col) | is.factor(col)) </span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;  3  Variables      344  Observations</span>
+<span class="co">#&gt; --------------------------------------------------------------------------------</span>
+<span class="co">#&gt; species </span>
+<span class="co">#&gt;        n  missing distinct </span>
+<span class="co">#&gt;      344        0        3 </span>
+<span class="co">#&gt;                                         </span>
+<span class="co">#&gt; Value         Adelie Chinstrap    Gentoo</span>
+<span class="co">#&gt; Frequency        152        68       124</span>
+<span class="co">#&gt; Proportion     0.442     0.198     0.360</span>
+<span class="co">#&gt; --------------------------------------------------------------------------------</span>
+<span class="co">#&gt; island </span>
+<span class="co">#&gt;        n  missing distinct </span>
+<span class="co">#&gt;      344        0        3 </span>
+<span class="co">#&gt;                                         </span>
+<span class="co">#&gt; Value         Biscoe     Dream Torgersen</span>
+<span class="co">#&gt; Frequency        168       124        52</span>
+<span class="co">#&gt; Proportion     0.488     0.360     0.151</span>
+<span class="co">#&gt; --------------------------------------------------------------------------------</span>
+<span class="co">#&gt; sex </span>
+<span class="co">#&gt;        n  missing distinct </span>
+<span class="co">#&gt;      333       11        2 </span>
+<span class="co">#&gt;                         </span>
+<span class="co">#&gt; Value      female   male</span>
+<span class="co">#&gt; Frequency     165    168</span>
+<span class="co">#&gt; Proportion  0.495  0.505</span>
+<span class="co">#&gt; --------------------------------------------------------------------------------</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; [[3]]</span>
+<span class="co">#&gt; <span style="color: #949494;"># A tibble: 0 × 0</span></span></code></pre></div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
