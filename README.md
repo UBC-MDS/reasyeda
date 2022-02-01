@@ -55,3 +55,6 @@ toy_data <- data.frame(
  summary_suggestions(toy_data)
  
 ```
+
+## Documentation
+More detailed documentation of the package is generated through `vignette` and `pkgdown` R packages and could be accessed on [this website](https://ubc-mds.github.io/reasyeda/) via GitHub pages.
