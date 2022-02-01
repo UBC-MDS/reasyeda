@@ -2,7 +2,7 @@
 % Please edit documentation in R/birds_eye_view.R
 \name{birds_eye_view}
 \alias{birds_eye_view}
-\title{This function performs high level EDA on all, or a specific set of features in a dataset by taking in a dataframe object, an optional integer for the histogram bin size, an optional custom variable list, and displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each categorical variable, and a correlation heatmap of the numeric variables. The function also has built in errors for identifying erroneous variables in the custom variable list.}
+\title{This function performs high level EDA on all, or a specific set of features displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each factor type categorical variable, and a correlation heatmap of the numeric variables.}
 \usage{
 birds_eye_view(df, n = 20, var_list = NULL)
 }
@@ -17,7 +17,7 @@ birds_eye_view(df, n = 20, var_list = NULL)
 a list of the visualization objects generated created by the function
 }
 \description{
-This function performs high level EDA on all, or a specific set of features in a dataset by taking in a dataframe object, an optional integer for the histogram bin size, an optional custom variable list, and displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each categorical variable, and a correlation heatmap of the numeric variables. The function also has built in errors for identifying erroneous variables in the custom variable list.
+This function performs high level EDA on all, or a specific set of features displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each factor type categorical variable, and a correlation heatmap of the numeric variables.
 }
 \examples{
 library(palmerpenguins)
