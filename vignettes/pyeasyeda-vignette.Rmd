@@ -16,4 +16,12 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(reasyeda)
+
+## basic example code
+library(palmerpenguins) # load the dataset
+
+clean_up(penguins)
+results <- birds_eye_view(penguins)
+close_up(penguins)
+summary_suggestions(penguins)
 ```
