@@ -54,27 +54,19 @@
       </tr></tbody><tbody><tr><td>
           <p><code><a href="birds_eye_view.html">birds_eye_view()</a></code> </p>
         </td>
-        <td><p>This function performs high level EDA on all, or a specific set of features in a dataset by taking in a dataframe object, an optional integer for the histogram bin size, an optional custom variable list, and displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each categorical variable, and a correlation heatmap of the numeric variables. The function also has built in errors for identifying erroneous variables in the custom variable list.</p></td>
+        <td><p>High level EDA: histograms, bar chart, and correlation heatmap</p></td>
       </tr><tr><td>
           <p><code><a href="clean_up.html">clean_up()</a></code> </p>
         </td>
-        <td><p>Takes a dataframe object and returns a cleaned version with rows containing any NaN values dropped. Inspects the clean dataframe and prints a list of potential outliers for each explanatory variable.</p></td>
+        <td><p>Clean up the dataframe and detect outliers</p></td>
       </tr><tr><td>
           <p><code><a href="close_up.html">close_up()</a></code> </p>
         </td>
-        <td><p>Accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.</p></td>
+        <td><p>Reveal linear relationships between two variables</p></td>
       </tr><tr><td>
           <p><code><a href="summary_suggestions.html">summary_suggestions()</a></code> </p>
         </td>
-        <td><p>Takes a dataframe object and returns a nested list object comprising
-of three lists. The first element of the output list corresponds
-to the descriptive statistics of numeric variables,
-the second element displays a list of summary data for the
-categorical variables and the final element calculates the count
-and proportion of distinct values in each categorical column.
-The last object of the output list can be used to determine
-which categorical variables to drop due to high proportion of
-unique values based on an input threshold value.</p></td>
+        <td><p>Summary suggestions</p></td>
       </tr></tbody></table></div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

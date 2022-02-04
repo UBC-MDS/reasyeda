@@ -80,7 +80,7 @@
 </h2>
 <ul>
 <li><p><code>clean_up</code> - This function takes in a dataframe object and performs initial steps of EDA on unstructured data. It returns a clean dataset by removing null values and identifying potential outliers in numeric variables based on a defined threshold.</p></li>
-<li><p><code>birds_eye_view</code> - This function takes in a dataframe object and visualizes the distributions of variables in the form of histograms and density plots. It also generates a correlation heatmap for numeric variables to study their relationships.</p></li>
+<li><p><code>birds_eye_view</code> - This function takes in a dataframe object and visualizes the distributions of variables in the form of histograms and density plots. It also generates a correlation heatmap for numeric variables to study their relationships. <strong>NOTE: The bar chart generation only works with factor type categorical variables.</strong></p></li>
 <li><p><code>close_up</code> - This function accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.</p></li>
 <li><p><code>summary_suggestions</code> - This function takes in a dataframe object and outputs a list of summary statistics for numeric and categorical variables. In addition, it also returns a list for the count and percentage of unique values in the categorical variables.</p></li>
 </ul>
@@ -105,19 +105,19 @@
 <p>This is a basic example which shows you how to solve a common problem:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">reasyeda</span><span class="op">)</span>
-<span class="co">## basic example code</span>
-<span class="va">toy_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>
-    income <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">8</span>, <span class="fl">10</span>, <span class="fl">12</span>, <span class="fl">17</span>, <span class="fl">19</span><span class="op">)</span>,
-    house_size <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">700</span>, <span class="fl">600</span>, <span class="fl">900</span>, <span class="fl">1000</span>, <span class="fl">1200</span>, <span class="fl">1500</span><span class="op">)</span>,
-    views <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"mountain"</span>, <span class="st">"river"</span>, <span class="st">"sea"</span>, <span class="st">"mountain"</span>, <span class="st">"urban"</span>, <span class="st">"forest"</span><span class="op">)</span>,
-    price <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">65</span>, <span class="fl">50</span>, <span class="fl">80</span>, <span class="fl">98.5</span>, <span class="fl">112</span>, <span class="fl">133</span><span class="op">)</span>,
-    doctor_visits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">6</span>, <span class="fl">8</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">3</span>, <span class="fl">2</span><span class="op">)</span>
-  <span class="op">)</span>
- <span class="fu"><a href="reference/clean_up.html">clean_up</a></span><span class="op">(</span><span class="va">toy_data</span><span class="op">)</span>
- <span class="fu"><a href="reference/birds_eye_view.html">birds_eye_view</a></span><span class="op">(</span><span class="va">toy_data</span><span class="op">)</span>
- <span class="fu"><a href="reference/close_up.html">close_up</a></span><span class="op">(</span><span class="va">toy_data</span><span class="op">)</span>
- <span class="fu"><a href="reference/summary_suggestions.html">summary_suggestions</a></span><span class="op">(</span><span class="va">toy_data</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://allisonhorst.github.io/palmerpenguins/" class="external-link">palmerpenguins</a></span><span class="op">)</span> <span class="co"># load the dataset</span>
+
+<span class="co">## basic example code </span>
+<span class="fu"><a href="reference/clean_up.html">clean_up</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/birds_eye_view.html">birds_eye_view</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="fu"><a href="reference/close_up.html">close_up</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
+<span class="fu"><a href="reference/summary_suggestions.html">summary_suggestions</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span>
  </code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="documentation">Documentation<a class="anchor" aria-label="anchor" href="#documentation"></a>
+</h2>
+<p>More detailed documentation of the package is generated through <code>vignette</code> and <code>pkgdown</code> R packages and could be accessed on <a href="https://ubc-mds.github.io/reasyeda/" class="external-link">this website</a> via GitHub pages.</p>
 </div>
 </div>
   </div>
