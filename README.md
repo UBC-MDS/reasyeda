@@ -43,7 +43,7 @@ This is a basic example which shows you how to solve a common problem:
 library(reasyeda)
 library(palmerpenguins) # load the dataset
 
-## basic example code
+## basic example code 
 clean_up(penguins)
 results <- birds_eye_view(penguins)
 close_up(penguins)
