@@ -14,7 +14,7 @@ This package is developed by James Kim, Kristin Bunyan, Sukhleen Kaur, and Lumin
 
 -   `clean_up` - This function takes in a dataframe object and performs initial steps of EDA on unstructured data. It returns a clean dataset by removing null values and identifying potential outliers in numeric variables based on a defined threshold.
 
--   `birds_eye_view` - This function takes in a dataframe object and visualizes the distributions of variables in the form of histograms and density plots. It also generates a correlation heatmap for numeric variables to study their relationships. NOTE: The bar chart generation only works with factor type categorical variables.
+-   `birds_eye_view` - This function takes in a dataframe object and visualizes the distributions of variables in the form of histograms and density plots. It also generates a correlation heatmap for numeric variables to study their relationships. **NOTE: The bar chart generation only works with factor type categorical variables.**
 
 -   `close_up` - This function accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.
 
