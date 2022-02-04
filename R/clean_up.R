@@ -8,7 +8,7 @@
 #' @examples
 #' library(palmerpenguins)
 #' results <- clean_up(penguins)
-#' '**The following potenital outliers are detected:**
+#' '**The following potential outliers are detected:**
 #' $Variable X:
 #' 300, 301, 500, 1000
 #' Variable Y:
@@ -21,7 +21,7 @@ clean_up <- function(df) {
   }
 
   # drop any rows with missing value
-  clean_df <- na.omit(df)
+  clean_df <- stats::na.omit(df)
 
   # print statement
   print("**The following potenital outliers are detected:**")
