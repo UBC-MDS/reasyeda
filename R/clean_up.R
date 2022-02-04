@@ -1,6 +1,6 @@
 #' Clean up the dataframe and detect outliers
 #'
-#' Takes a dataframe object and returns a cleaned version with rows containing any NaN values dropped. Inspects the clean dataframe and prints a list of potential outliers for each explanatory variable.
+#' Takes a dataframe object and returns a cleaned version with rows containing any NaN value dropped. Inspects the clean dataframe and prints a list of outliers for each numeric column.
 #'
 #' @param df The dataframe on which the function will operate
 #'
