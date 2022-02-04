@@ -15,7 +15,7 @@ test_that("Testing if dataframe is returned", {
   expect_s3_class(clean_up(test_df), "data.frame")
 })
 
-test_that("Testing for correct outlier detected", {
+test_that("Testing for correct outliers detected", {
   test_df <- data.frame(
     a=c(1,1,1,1,1,1,1,1,1,1,1e14),
     b=c(NA,'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i','j')
