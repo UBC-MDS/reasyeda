@@ -46,7 +46,7 @@ library(palmerpenguins) # load the dataset
 ## basic example code 
 clean_up(penguins)
 results <- birds_eye_view(penguins)
-close_up(penguins)
+close_up(penguins, n=1)
 summary_suggestions(penguins)
  
 ```
