@@ -1,3 +1,5 @@
+#' Summary suggestions
+#'
 #' Takes a dataframe object and returns a nested list object comprising
 #' of three lists. The first element of the output list corresponds
 #' to the descriptive statistics of numeric variables,

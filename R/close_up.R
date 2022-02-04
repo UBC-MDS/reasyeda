@@ -1,3 +1,5 @@
+#' Reveal linear relationships between two variables
+#'
 #' Accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.
 #'
 #' @param df The dataframe on which the function will operate

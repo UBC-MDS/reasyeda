@@ -1,3 +1,5 @@
+#' High level EDA: histograms, bar chart, and correlation heatmap
+#'
 #' This function performs high level EDA on all, or a specific set of features displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each factor type categorical variable, and a correlation heatmap of the numeric variables.
 #'
 #' @param df A data.frame. The dataframe on which visualizations will be created

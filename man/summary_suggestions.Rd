@@ -2,15 +2,7 @@
 % Please edit documentation in R/summary_suggestions.R
 \name{summary_suggestions}
 \alias{summary_suggestions}
-\title{Takes a dataframe object and returns a nested list object comprising
-of three lists. The first element of the output list corresponds
-to the descriptive statistics of numeric variables,
-the second element displays a list of summary data for the
-categorical variables and the final element calculates the count
-and proportion of distinct values in each categorical column.
-The last object of the output list can be used to determine
-which categorical variables to drop due to high proportion of
-unique values based on an input threshold value.}
+\title{Summary suggestions}
 \usage{
 summary_suggestions(df, threshold = 0.8)
 }

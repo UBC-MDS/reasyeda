@@ -2,7 +2,7 @@
 % Please edit documentation in R/close_up.R
 \name{close_up}
 \alias{close_up}
-\title{Accepts a dataframe and the number of pairs of variables with strongest correlations. It creates scatterplots with a linear trend for each pair of variables with stronglest correlations.}
+\title{Reveal linear relationships between two variables}
 \usage{
 close_up(df, n = 1)
 }

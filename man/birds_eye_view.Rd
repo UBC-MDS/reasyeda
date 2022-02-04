@@ -2,7 +2,7 @@
 % Please edit documentation in R/birds_eye_view.R
 \name{birds_eye_view}
 \alias{birds_eye_view}
-\title{This function performs high level EDA on all, or a specific set of features displaying 3 different visualization sets: histograms for each numeric variable, a bar chart for each factor type categorical variable, and a correlation heatmap of the numeric variables.}
+\title{High level EDA: histograms, bar chart, and correlation heatmap}
 \usage{
 birds_eye_view(df, n = 20, var_list = NULL)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/clean_up.R
 \name{clean_up}
 \alias{clean_up}
-\title{Takes a dataframe object and returns a cleaned version with rows containing any NaN values dropped. Inspects the clean dataframe and prints a list of potential outliers for each explanatory variable.}
+\title{Clean up the dataframe and detect outliers}
 \usage{
 clean_up(df)
 }
