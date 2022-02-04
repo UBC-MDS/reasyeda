@@ -52,4 +52,4 @@ summary_suggestions(penguins)
 ```
 
 ## Documentation
-More detailed documentation of the package is generated through `vignette` and `pkgdown` R packages and could be accessed on [this website](https://ubc-mds.github.io/reasyeda/) via GitHub pages.
+More detailed documentation of the package is generated through `vignette` and `pkgdown` R packages and could be accessed on [this website](https://ubc-mds.github.io/reasyeda/index.html) via GitHub pages.
