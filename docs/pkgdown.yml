@@ -2,6 +2,6 @@ pandoc: 2.14.0.3
 pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
-  pyeasyeda-vignette: pyeasyeda-vignette.html
-last_built: 2022-02-04T06:15Z
+  reasyeda-vignette: reasyeda-vignette.html
+last_built: 2022-02-04T19:42Z
 

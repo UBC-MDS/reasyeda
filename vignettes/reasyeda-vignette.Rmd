@@ -1,8 +1,8 @@
 ---
-title: "pyeasyeda-vignette"
+title: "reasyeda-vignette"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{pyeasyeda-vignette}
+  %\VignetteIndexEntry{reasyeda-vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
